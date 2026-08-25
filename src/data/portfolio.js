@@ -111,6 +111,23 @@ export const PORTFOLIO_DATA = {
       githubUrl: "https://github.com/ErickBarbosa7"
     },
     {
+      name: "Capitán Grill",
+      description: "Plataforma integral para gestión de restaurante. Combina una moderna landing page con menú digital accesible por QR, y un dashboard administrativo para el control de inventario, registro de gastos y cierres diarios de caja.",
+      stack: ["React", "Vite", ".NET", "MySQL"],
+      liveDemoUrl: "https://capitan-grill.vercel.app/inicio",
+      githubUrl: "https://github.com/ErickBarbosa7/Capitan-Grill-Front.git",
+      // --- INFO PARA EL MODAL (Opcional, pero recomendada) ---
+      role: "Desarrollador Full-Stack",
+      longDescription: "Una solución de extremo a extremo diseñada para un restaurante de estilo campestre. El proyecto resuelve dos necesidades: ofrecer un menú digital interactivo para los clientes mediante códigos QR, y proveer a la administración un panel seguro para gestionar las finanzas diarias, el inventario y los gastos operativos.",
+      keyFeatures: [
+        "Landing page promocional con menú digital integrado.",
+        "Panel administrativo protegido para dueños/gerentes.",
+        "Módulo de control de inventario y registro de gastos.",
+        "Sistema de caja con cálculos automáticos para cierres diarios."
+      ],
+      extendedStack: ["React", "Vite", "Tailwind CSS", ".NET Web API", "MySQL", "Entity Framework", "Vercel"]
+    },
+    {
       name: "Nestly",
       description: "Plataforma de alojamiento que conecta anfitriones y huéspedes mediante una experiencia web limpia, con gestión de reservas y autenticación.",
       role: "Desarrollo de Frontend y Base de Datos",

@@ -19,22 +19,24 @@ const ExperienceSection = () => {
           {experience.map((job, index) => (
             <FadeIn key={`${job.company}-${job.period}`} delay={index * 0.1}>
               <article className="rounded-[2rem] border border-stone-200 bg-white p-6 transition-colors hover:border-stone-400 sm:p-8 dark:border-stone-800 dark:bg-stone-900 dark:hover:border-stone-600">
-                {/* Encabezado estilo píldora: logo · rol/empresa · fecha */}
-                <div className="flex flex-wrap items-center gap-4 sm:gap-6">
-                  <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-stone-100 text-stone-700 dark:bg-stone-800 dark:text-stone-200">
-                    <Briefcase size={20} />
-                  </span>
+                {/* Encabezado estilo píldora: apilado en móvil, logo · rol/empresa · fecha en sm+ */}
+                <div className="flex flex-col items-start gap-3 sm:flex-row sm:items-center sm:gap-6">
+                  <div className="flex w-full items-center gap-4 sm:min-w-0 sm:flex-1">
+                    <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-stone-100 text-stone-700 dark:bg-stone-800 dark:text-stone-200">
+                      <Briefcase size={20} />
+                    </span>
 
-                  <div className="min-w-0 flex-1 text-center">
-                    <h3 className="truncate font-serif text-lg font-bold text-stone-900 dark:text-stone-50">
-                      {job.role}
-                    </h3>
-                    <p className="truncate text-sm font-medium text-stone-500 dark:text-stone-400">
-                      {job.company}
-                    </p>
+                    <div className="min-w-0 text-left sm:text-center">
+                      <h3 className="font-serif text-lg leading-snug font-bold text-stone-900 dark:text-stone-50">
+                        {job.role}
+                      </h3>
+                      <p className="text-sm font-medium text-stone-500 dark:text-stone-400">
+                        {job.company}
+                      </p>
+                    </div>
                   </div>
 
-                  <span className="shrink-0 rounded-full border border-stone-200 px-4 py-1.5 text-xs font-medium whitespace-nowrap text-stone-500 dark:border-stone-700 dark:text-stone-400">
+                  <span className="shrink-0 self-start rounded-full border border-stone-200 px-4 py-1.5 text-xs font-medium whitespace-nowrap text-stone-500 sm:self-auto dark:border-stone-700 dark:text-stone-400">
                     {job.period}
                   </span>
                 </div>
