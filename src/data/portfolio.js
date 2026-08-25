@@ -113,12 +113,11 @@ export const PORTFOLIO_DATA = {
     {
       name: "Capitán Grill",
       description: "Plataforma integral para gestión de restaurante. Combina una moderna landing page con menú digital accesible por QR, y un dashboard administrativo para el control de inventario, registro de gastos y cierres diarios de caja.",
-      stack: ["React", "Vite", ".NET", "MySQL"],
+      stack: ["React", "Vite", ".NET", "MySQL", "Docker", "Vercel"],
       liveDemoUrl: "https://capitan-grill.vercel.app/inicio",
       githubUrl: "https://github.com/ErickBarbosa7/Capitan-Grill-Front.git",
-      // --- INFO PARA EL MODAL (Opcional, pero recomendada) ---
       role: "Desarrollador Full-Stack",
-      longDescription: "Una solución de extremo a extremo diseñada para un restaurante de estilo campestre. El proyecto resuelve dos necesidades: ofrecer un menú digital interactivo para los clientes mediante códigos QR, y proveer a la administración un panel seguro para gestionar las finanzas diarias, el inventario y los gastos operativos.",
+      longDescription: "Una solución de extremo a extremo diseñada para un restaurante de estilo campestre. El proyecto resuelve dos necesidades: ofrecer un menú digital interactivo para los clientes mediante códigos QR, y proveer un panel de administración seguro para gestionar las finanzas diarias, el inventario y los gastos operativos.",
       keyFeatures: [
         "Landing page promocional con menú digital integrado.",
         "Panel administrativo protegido para dueños/gerentes.",
@@ -129,14 +128,14 @@ export const PORTFOLIO_DATA = {
     },
     {
       name: "Nestly",
-      description: "Plataforma de alojamiento que conecta anfitriones y huéspedes mediante una experiencia web limpia, con gestión de reservas y autenticación.",
+      description: "Plataforma web para publicar y rentar casas y propiedades, construida desde cero para la materia de Ingeniería de Software.",
       role: "Desarrollo de Frontend y Base de Datos",
-      challenge: "En un equipo de 4 integrantes construimos una plataforma tipo marketplace para publicar y rentar propiedades. Fui responsable del frontend en Angular con Tailwind CSS consumiendo la API REST de Laravel, participé en el modelado de la base de datos relacional en MySQL y estandaricé el entorno de desarrollo del equipo con Docker.",
+      challenge: "Proyecto iniciado desde cero para la materia de Ingeniería de Software: diseñamos y construimos una plataforma completa para publicar y rentar casas y propiedades. En un equipo de 4 integrantes fui responsable del frontend en Angular con Tailwind CSS, consumiendo la API REST de Laravel; también participé en el modelado de la base de datos relacional en MySQL y estandaricé el entorno de desarrollo del equipo con Docker, llevando la idea hasta un producto funcional.",
       features: [
-        "Publicación y búsqueda de propiedades",
-        "Gestión de reservas",
-        "Autenticación de anfitriones y huéspedes",
-        "Interfaz responsive con Tailwind CSS"
+        "Publicación y búsqueda de casas y propiedades en renta",
+        "Gestión de reservas entre anfitriones y huéspedes",
+        "Autenticación y perfiles de anfitrión y huésped",
+        "Interfaz responsive construida con Tailwind CSS"
       ],
       stack: ["Angular", "Laravel", "MySQL", "Docker", "Tailwind CSS"],
       stackFull: ["Angular", "TypeScript", "Tailwind CSS", "Laravel", "PHP", "MySQL", "Docker", "Postman"],

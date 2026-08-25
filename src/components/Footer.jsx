@@ -1,10 +1,12 @@
 import { useEffect, useState } from 'react';
 import { Check, Copy, Mail, MapPin, Phone } from 'lucide-react';
 import FadeIn from './FadeIn';
+import { GithubIcon, LinkedinIcon } from './icons';
 import { PORTFOLIO_DATA } from '../data/portfolio';
 
 const Footer = () => {
-  const { email, phone, location } = PORTFOLIO_DATA.personalInfo;
+  const { email, phone, location, github, linkedin } =
+    PORTFOLIO_DATA.personalInfo;
   const [copied, setCopied] = useState(false);
 
   useEffect(() => {
@@ -21,6 +23,11 @@ const Footer = () => {
       // Portapapeles no disponible (contexto no seguro)
     }
   };
+
+  const socials = [
+    { label: 'GitHub', href: github, Icon: GithubIcon },
+    { label: 'LinkedIn', href: linkedin, Icon: LinkedinIcon },
+  ];
 
   const details = [
     { Icon: Phone, label: phone, href: `tel:${phone}` },
@@ -59,6 +66,21 @@ const Footer = () => {
           >
             {copied ? <Check size={18} /> : <Copy size={18} />}
           </button>
+        </div>
+
+        <div className="mt-4 flex flex-wrap items-center justify-center gap-3">
+          {socials.map(({ label, href, Icon }) => (
+            <a
+              key={label}
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full border border-stone-300 px-7 py-3 font-semibold text-stone-900 transition-colors hover:border-stone-900 hover:bg-stone-100 dark:border-stone-700 dark:text-stone-50 dark:hover:border-stone-300 dark:hover:bg-stone-800"
+            >
+              <Icon size={18} />
+              {label}
+            </a>
+          ))}
         </div>
 
         <ul className="mt-12 flex flex-wrap items-center justify-center gap-x-8 gap-y-3">
