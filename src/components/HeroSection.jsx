@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { Code2, Download, Folder } from 'lucide-react';
 import { GithubIcon, LinkedinIcon } from './icons';
 import { PORTFOLIO_DATA } from '../data/portfolio';
-import heroImg from '../assets/hero.png';
+import profileImg from '../assets/me.jpeg';
 
 const CV_URL = '/cv/CV_Erick_Barbosa.pdf';
 
@@ -27,7 +27,7 @@ const HeroSection = () => {
           className="mx-auto w-full max-w-sm"
         >
           <img
-            src={heroImg}
+            src={profileImg}
             alt={name}
             className="aspect-square w-full rounded-[2.5rem] object-cover shadow-xl shadow-stone-900/10 dark:shadow-black/40"
           />

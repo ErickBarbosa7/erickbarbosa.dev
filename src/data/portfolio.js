@@ -7,7 +7,7 @@ export const PORTFOLIO_DATA = {
     phone: "415-566-5431",
     location: "San Miguel de Allende, Gto.",
     github: "https://github.com/ErickBarbosa7",
-    linkedin: "https://linkedin.com/in/erick-barbosa-Obba10372"
+    linkedin: "https://www.linkedin.com/in/erick-barbosa-0bba10372/"
   },
   aboutMe: {
     description: "Soy un desarrollador full-stack en mi último año de Ingeniería en Sistemas, enfocado en construir software escalable y eficiente. Disfruto diseñar soluciones completas, desde la arquitectura y despliegue con Docker, hasta la creación de interfaces limpias con React y Angular. Mi experiencia abarca no solo el desarrollo técnico, sino también la gestión de equipos bajo metodologías ágiles, asegurando que el código resuelva problemas reales del negocio."
