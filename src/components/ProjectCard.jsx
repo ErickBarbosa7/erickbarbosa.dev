@@ -1,7 +1,7 @@
 import { ExternalLink, Maximize2 } from 'lucide-react';
 import { GithubIcon } from './icons';
 
-const ProjectCard = ({ project, images = [], onOpen }) => {
+const ProjectCard = ({ project, images = [], portrait = false, onOpen }) => {
   const hasGallery = images.length > 0;
   const hasDetails = Boolean(
     project.role ||
@@ -37,12 +37,14 @@ const ProjectCard = ({ project, images = [], onOpen }) => {
     >
       {/* Captura del proyecto o placeholder */}
       {hasGallery ? (
-        <div className="relative h-44 overflow-hidden border-b border-stone-200 dark:border-stone-800">
+        <div className="relative h-44 overflow-hidden border-b border-stone-200 bg-stone-100 dark:border-stone-800 dark:bg-stone-800/60">
           <img
             src={images[0]}
             alt={`Captura de ${project.name}`}
             loading="lazy"
-            className="h-full w-full object-cover object-top transition-transform duration-300 group-hover:scale-105"
+            className={`h-full w-full transition-transform duration-300 group-hover:scale-105 ${
+              portrait ? 'object-contain' : 'object-cover object-top'
+            }`}
           />
           {hasGallery && (
             <div className="absolute inset-0 flex items-center justify-center bg-stone-950/0 opacity-0 transition-all duration-300 group-hover:bg-stone-950/40 group-hover:opacity-100">

@@ -74,8 +74,8 @@ export const PORTFOLIO_DATA = {
         "Gestión de usuarios conectados",
         "Comunicación bidireccional cliente-servidor"
       ],
-      stack: ["Flutter Web", "Node.js", "WebSockets", "MongoDB", "Render", "Netlify"],
-      stackFull: ["Flutter Web", "Dart", "Node.js", "WebSockets", "MongoDB", "Render", "Netlify"],
+      stack: ["Flutter", "Node.js", "WebSockets", "MongoDB", "Render", "Netlify"],
+      stackFull: ["Flutter", "Dart", "Node.js", "WebSockets", "MongoDB", "Render", "Netlify"],
       liveDemoUrl: "https://studyhub-live.netlify.app/",
       githubUrl: "https://github.com/ErickBarbosa7"
     },
@@ -98,7 +98,7 @@ export const PORTFOLIO_DATA = {
       name: "Meraki",
       description: "Aplicación web lúdica y editorial para el descubrimiento de palabras. Incorpora físicas de animación, efectos de audio y microservicios.",
       role: "Desarrollador Frontend",
-      challenge: "El reto era crear una experiencia lúdica donde las animaciones con físicas y los efectos de audio no sacrificaran el rendimiento. Lo logré combinando animaciones ligeras con Lottie y una arquitectura de microservicios que mantiene la aplicación rápida y escalable.",
+      challenge: "Crear una experiencia que despertara la curiosidad por palabras poco conocidas y sus significados. Meraki busca que las personas descubran palabras especiales, conozcan su significado y dejen un mensaje en ellas, convirtiendo cada palabra en una pequeña historia o recuerdo.",
       features: [
         "Descubrimiento interactivo de palabras",
         "Animaciones con físicas integradas",

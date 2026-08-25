@@ -9,7 +9,7 @@ import {
 } from 'lucide-react';
 import { GithubIcon } from './icons';
 
-const ProjectModal = ({ project, images = [], onClose }) => {
+const ProjectModal = ({ project, images = [], portrait = false, onClose }) => {
   const [index, setIndex] = useState(0);
   const total = images.length;
 
@@ -96,7 +96,9 @@ const ProjectModal = ({ project, images = [], onClose }) => {
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
                   transition={{ duration: 0.2 }}
-                  className="h-full w-full object-cover"
+                  className={`h-full w-full ${
+                    portrait ? 'object-contain' : 'object-cover'
+                  }`}
                   alt={`${project.name} - Captura ${index + 1}`}
                 />
               </AnimatePresence>
